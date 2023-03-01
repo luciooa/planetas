@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tu peso en nuestro sistema solar</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="planetas,astronomia,gravedad,sistema,solar,sol,mercurio,venus,tierra,marte,jupiter,urano,neptuno,pluton,astros,tu,peso,cuanto,universo,cosmos,multiverso,galaxia,estrella,agujero,negro,luna,big,bang,cosmologia,astrofisica,fisica,ciencia,tecnologia, educacion, naturales, otros, algoritmo, planets, astronomy, gravity, system, solar, sun, mercury, venus, earth, mars, jupiter, uranus, neptune, pluton, stars, your, weight, how much, universe, cosmos, multiverse, galaxy, star, hole, black, moon, big, bang, cosmology, astrophysics, physics, science, technology, education, natural, other,another,algorithm">
+		<meta name="description" content="Tu peso en nuestro sistema solar es una pagina que calcula tu peso en los distintos astros de nuestro sistema solar y tambien brinda informacion sobre dichos objetos">
+		<meta name="author" content="Lucio Altamirano">
+		<meta name="robots" content="index">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="solarsystem.css">
+		<link href="http://fonts.cdnfonts.com/css/the-solstice" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/distant-galaxy" rel="stylesheet">  
+		<link rel="icon" href="tierra.png">
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>           
+		<script src="solarsystem.js"></script>                      
+                
+	</head>
+	<body class="hidden">
+		<div id="comienzo" class="contenedor">
+		<div class="centrado" id="onload">
+		<img src="Rocket.gif">			
+		</div>
+
+			<header class="header animate-bg"><div class="divisor"><h1 id="titulo">Cuánto pesas en nuestro Sistema Solar?</h1></div>
+			</header>
+			<div>
+				
+			<main class="main">	
+			<div class="hola"><p class="ppp">En la Tierra pesas distinto que en Marte o Jupiter, esto se debe a la gravedad que existe en cada objeto de nuestro sistema solar, veamos cuanto pesas en el astro que elegiste.</p></div>
+		<form>
+			<input id="num1" type="number" placeholder="Coloque aqui su peso">
+			<br>
+			<div class="pp"><p class="v">Ahora selecciona el astro que desees:</p></div>
+
+			<a href="#resultado"><input id="num" type="button" value="SOL" onclick="operaciones('sol')"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="MERCURIO" onclick="operaciones('mercurio');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="VENUS" onclick="operaciones('venus');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="TIERRA" onclick="operaciones('tierra');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="LUNA" onclick="operaciones('luna');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="MARTE" onclick="operaciones('marte');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="JUPITER" onclick="operaciones('jupiter');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="SATURNO" onclick="operaciones('saturno');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="URANO" onclick="operaciones('urano');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="NEPTUNO" onclick="operaciones('neptuno');"></a>
+			<br>
+			<a href="#resultado"><input id="num" type="button" value="PLUTON" onclick="operaciones('pluton');"></a>
+			<br>
+			<div id="resultado" class="final animate-bg"></div>
+			<a class="a" href="#comienzo"><div id="volver">VOLVER</div></a>
+			
+		</form>	
+			</main>
+			<aside class="aside">
+				<div class="h2"><h2>CONOCE MAS</h2></div>
+				<a href="https://www.youtube.com/watch?v=jMKJ3BhSwwk" target="_blank"><div class="sun"><img id="sol" src="sol.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=HVHiCg5nuBQ"target="_blank"><div class="sun"><img id= "sol" src="mercurio.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=WFuXXbbymGY"target="_blank"><div class="sun"><img id="sol" src="venus.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=coQD2xjQVWM"target="_blank"><div class="sun"><img id= "sol" src="tierra.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=9zlEI3_tUaA"target="_blank"><div class="sun"><img id="sol" src="luna.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=zChAqJv2fi0"target="_blank"><div class="sun"><img id= "sol" src="marte.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=02oQIvTCzNI"target="_blank"><div class="sun"><img id="sol" src="jupiter.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=SIxyMBjtPYw"target="_blank"><div class="sun"><img id= "sol" src="saturno.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=M2ll5hs4QsQ"target="_blank"><div class="sun"><img id="sol" src="urano.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=5vcqxZz89Z4"target="_blank"><div class="sun"><img id= "sol" src="neptuno.png"></div></a>
+				<a href="https://www.youtube.com/watch?v=ej-ve7DylnY"target="_blank"><div class="sun1"><img id="sol" src="pluton.png"></div></a>
+			</aside>	
+			<footer>
+				<div class="footer">Copyright © 2023 Ciencia Educativa</div>
+				<br>
+				<div class="footer">Desarrollado por Lucio Altamirano</div>
+				<br>
+				<div class="footer">Escribime para más información</div>
+				<br>
+				<br>
+				<div id="sociales">
+					<a href="https://wa.me/543547570937" target="_blank"><div><img class="redes" src="whatsapp.png"></div></a>
+					<a href="https://www.instagram.com/lucio_altamirano/" target="_blank"><div><img class="redes" src="instagram.png"></div></a>
+					<a href="mailto: lapfilms7@gmail.com" target="_blank">
+						<div>
+							<img class="redes" src="gmail.png">
+						</div>
+					</a>
+				</div>			
+			</footer>
+			</div>	
+		</div>
+	</body>
+</html>
